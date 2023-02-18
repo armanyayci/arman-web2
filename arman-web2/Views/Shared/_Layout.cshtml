@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <meta name="keywords" content="Arman Yaycı Personel Website" />
+    <meta name="description"
+          content="Arman Yaycı Personel Website" />
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="~/css/main.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/global.css" asp-append-version="true" />
+    <link rel="stylesheet" media="(max-width:768px)" href="~/css/mobile.css" asp-append-version="true" />
+
+
+    @*fonts google*@
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+          rel="stylesheet" />
+    @*font awesome*@
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav id="navbar">
+                <h1 class="heading-small">Arman Yaycı</h1>
+
+                <ul>
+                    <li><a class="link" asp-controller="Home" asp-action="Index" >Home</a></li>
+                    <li><a class="link" asp-controller="Home" asp-action="About" >About</a></li>
+                    <li><a class="link" asp-controller="Home" asp-action="Contact" >Contact</a></li>
+                    <li><a class="link" asp-controller="Home" asp-action="Comments" >Comments</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    @RenderBody()
+
+
+    <footer id="contact">
+        <div class="contact-form">
+            <ul>
+                <li>
+                    <a class="link" href="#"><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li>
+                    <a class="link" href="#"><i class="fab fa-github"></i></a>
+                </li>
+                <li>
+                    <a class="link" href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+            </ul>
+            <br />
+            <div class="text-center">© This website designed by Arman Yaycı. ALL RIGHTS ARE DESERVED</div>
+        </div>
+    </footer>
+
+
+
+</body>
+</html>
+

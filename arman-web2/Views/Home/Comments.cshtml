@@ -1,0 +1,28 @@
+﻿@Model IEnumerable<Comment>
+
+
+@*<div class="comments-container">
+    @foreach (var comment in Model)
+    {
+    <div class="comment">
+        <div class="comment-header">
+            @comment.name
+        </div>
+        <div class="comment-text">
+            @comment.message
+        </div>
+    </div>
+    }
+</div>*@
+
+
+   <div class="light-text text-center">
+
+       @foreach(var item in Model)
+            {
+                <p3>@item.name</p3>
+                <div>@item.message</div>
+                <br /> <hr />
+            }
+
+   </div>

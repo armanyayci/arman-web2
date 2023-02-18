@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #130101;
+}
+hr {
+  position: relative;
+  top: 1px;
+  border: none;
+  height: 1px;
+
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+html {
+  font-family: "Open Sans", sans-serif;
+}
+/* Navbar Section */
+#navbar {
+  color: #fff;
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  padding: 0.75rem;
+  height: 70px;
+}
+#navbar ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+#navbar ul li a {
+  padding-left: 0.8rem;
+  padding-right: 1rem;
+  padding-bottom: 0.7rem;
+}
+
+.link 
+{
+
+  text-decoration:none;
+  position:relative;
+}
+.link::before 
+{
+  content:'';
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:0px;
+  height:3px;
+  background:white;
+  opacity:0;
+  -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+}
+
+.link:hover:before
+{
+  opacity:1;
+  width:100%;
+}
+
+
+/* Home Section */
+
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  border-bottom: 1px solid grey;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+#home img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 100%;
+}
+#home .name h2 {
+  margin-bottom: 0.75rem;
+}
+#home .name p {
+  opacity: 0.6;
+  font-style: italic;
+}
+
+
+/* Contact */
+
+#contact {
+  color: #fff;
+  padding: 1rem;
+}
+
+#contact .contact-form {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact .contact-form ul {
+  list-style-type: none;
+  display: flex;
+  margin-top: 1rem;
+  align-self: center;
+}
+#contact .contact-form ul li a {
+  padding: 1rem;
+  font-size: 2rem;
+}
+#contact .contact-form ul li a:hover {
+  opacity: 0.8;
+}
+
+
+/* about page */
+
+
+
+
+
+#desc-margin{
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-bottom: 7.25%;
+}
+
+#about-margin{
+  margin-top:10%;
+  margin-bottom: 10%; 
+}
+
+
+#about {
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-items:center;
+  padding-top: 5rem;
+  padding-left: 6rem;
+  border-bottom: 1px solid grey;
+  height: 100%;
+  width: 100%;
+}
+
+#about div img {
+
+  border-radius: 100%;
+
+}
+#about .name h2 {
+  margin-bottom: 0.75rem;
+}
+#about .name p {
+  opacity: 0.6;
+  font-style: italic;
+}
+
+
+.imageAboutPage {
+    width: 100%;
+}
+
+
+
+
+.comments-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.comment {
+    margin-bottom: 20px;
+}
+
+.comment-header {
+    font-weight: bold;
+}
+
+.comment-text {
+    margin-top: 5px;
+}
+
+.table {
+    margin-bottom: 0;
+}

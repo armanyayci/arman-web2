@@ -1,0 +1,39 @@
+﻿<Properties StartupConfiguration="{A22544F0-2361-49F2-89FC-71138DF13A76}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="arman-web2/Views/Home/Comments.cshtml">
+    <Files>
+      <File FileName="arman-web2/Views/Home/Comments.cshtml" Line="25" Column="30" />
+      <File FileName="arman-web2/wwwroot/css/main.css" Line="200" Column="2" />
+      <File FileName="arman-web2/wwwroot/css/global.css" Line="1" Column="1" />
+      <File FileName="arman-web2/Models/Comment.cs" Line="11" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="arman-web2" expanded="True">
+            <Node name="arman-web2" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.arman-web2 PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>
