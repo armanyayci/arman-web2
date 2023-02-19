@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\arman-web2.props" />
+</Project>

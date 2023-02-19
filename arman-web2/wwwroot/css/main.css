@@ -4,6 +4,9 @@
   box-sizing: border-box;
   background-color: #130101;
 }
+body {
+    background-color: #130101;
+}
 hr {
   position: relative;
   top: 1px;
@@ -197,4 +200,97 @@ html {
 
 .table {
     margin-bottom: 0;
+}
+
+.marg1 {
+    padding-left: 25%;
+    padding-right: 25%;
+    color: #fff;
+}
+
+
+.comment-pd {
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+
+.nameinput {
+    max-width: 25%;
+}
+.messageinput {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#section-form {
+    max-width: 968px;
+    margin: 3rem auto 0;
+}
+
+.comment-heading {
+    background-color: #130101;
+    margin-top: -5rem;
+    padding: 1rem;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.comm-date {
+    display: flex;
+    width: 772.81px;
+    justify-content: space-between;
+}
+
+.user-img {
+    background: var(--main-color);
+    padding: 1rem;
+    font-size: 5rem;
+    border-radius: 50%;
+    margin: 2rem 0rem 0 2rem;
+}
+
+.user-comment-box {
+    border-top: 1px solid rgba(253, 19, 2, 0.3);
+    padding-left: 4rem;
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.user-comment {
+    margin: 2rem 0 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+    .user-comment h4 {
+        margin-bottom: .5rem;
+        font-weight: 700;
+    }
+
+    .user-comment p {
+        font-size: .8rem;
+        font-weight: 300;
+    }
+
+.user-img-com {
+    background: var(--main-color);
+    padding: .6rem;
+    font-size: 3rem;
+    border-radius: 50%;
+    margin: 2rem 0rem 0 2rem;
 }

@@ -1,28 +1,35 @@
-﻿@Model IEnumerable<Comment>
+﻿@model Comment
+@{
+    ViewData["Title"] = "Contact";
+}
 
 
-@*<div class="comments-container">
-    @foreach (var comment in Model)
-    {
-    <div class="comment">
-        <div class="comment-header">
-            @comment.name
+
+   <div class="row comment-pd light-text pt-5">
+        <div class="col">
+          <div>
+            <div class="header justify-content-center pb-1 pt-3">
+              <h3 class="text-center ">We attach your opinions</h3>
+            </div>
+            <div >
+              <form asp-action="Comments" asp-controller="Home" method="post">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input asp-for="name" type="text" class="form-control nameinput" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                  <label for="comment">Comment</label>
+                  <textarea asp-for="message" class="form-control" id="comment" rows="5" placeholder="Enter your comment"></textarea>
+                </div class>
+                <div class="text-center">
+                  <button asp-action="Comments" asp-controller="Home" onclick="alert('Your comment is added.!')" type="submit" class="btn btn-primary ">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
-        <div class="comment-text">
-            @comment.message
-        </div>
-    </div>
-    }
-</div>*@
+      </div>
 
-
-   <div class="light-text text-center">
-
-       @foreach(var item in Model)
-            {
-                <p3>@item.name</p3>
-                <div>@item.message</div>
-                <br /> <hr />
-            }
-
-   </div>
+        
+    <partial name="CommentsPartialView" action="CommentsPartial" model="CommentRepository.comments"/>
+    
