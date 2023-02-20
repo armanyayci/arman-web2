@@ -34,6 +34,8 @@ public class HomeController : Controller
     public IActionResult Comments(Comment comment)
     {
         CommentRepository.AddComment(comment);
+        comment.creation_date = DateTime.Now;
+
         return RedirectToAction("Comments");
     }
 

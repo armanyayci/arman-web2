@@ -12,6 +12,9 @@ namespace arman_web2.Models
         [Required(ErrorMessage = "Please Write Your message!")]
         public String? message { get; set; }
 
+
+        public DateTime creation_date { get; set; }
+
     }
 }
 

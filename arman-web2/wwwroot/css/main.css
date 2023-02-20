@@ -4,9 +4,15 @@
   box-sizing: border-box;
   background-color: #130101;
 }
-body {
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden ;
     background-color: #130101;
 }
+
+
+
 hr {
   position: relative;
   top: 1px;
@@ -289,8 +295,26 @@ html {
 
 .user-img-com {
     background: var(--main-color);
-    padding: .6rem;
     font-size: 3rem;
     border-radius: 50%;
     margin: 2rem 0rem 0 2rem;
+}
+
+.comm-date {
+    display: flex;
+    width: 772.81px;
+    justify-content: space-between;
+}
+
+.comment-heading {
+    background-color: var(--main-color);
+    margin-top: -5rem;
+    padding: 1rem;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.overcomment {
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
