@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ARjPBbtqdsZdShNRuGRBkOwQlJ28z18qdh2G2AmvJWU=",
+  "Hash": "hJIVpp0NFyNwlIzUUDwyMOrRTEzzKHZCJlVBWzQnTKI=",
   "Source": "arman-web2",
   "BasePath": "_content/arman-web2",
   "Mode": "Default",
@@ -117,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\arman\\Documents\\GitHub\\arman-web2\\arman-web2\\wwwroot\\images\\about.jpg",
+      "SourceId": "arman-web2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\arman\\Documents\\GitHub\\arman-web2\\arman-web2\\wwwroot\\",
+      "BasePath": "_content/arman-web2",
+      "RelativePath": "images/about.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\about.jpg"
     },
     {
       "Identity": "C:\\Users\\arman\\Documents\\GitHub\\arman-web2\\arman-web2\\wwwroot\\images\\arman.jpg",

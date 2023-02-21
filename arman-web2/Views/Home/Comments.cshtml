@@ -1,7 +1,13 @@
-﻿@model Comment
+﻿@using X.PagedList
+@using X.PagedList.Mvc.Core
+
+@model ViewModel
+
 @{
     ViewData["Title"] = "Contact";
 }
+
+<div class="line">
 
 
 
@@ -15,14 +21,14 @@
               <form asp-action="Comments" asp-controller="Home" method="post">
                 <div class="form-group">
                   <label for="name">Name</label>
-                  <input asp-for="name" type="text" class="form-control nameinput" id="name" placeholder="Enter your name">
+                  <input asp-for="@Model.comment.name" type="text" class="form-control nameinput" id="name" placeholder="Enter your name">
                 </div>
                 <div class="form-group">
                   <label for="comment">Comment</label>
-                  <textarea asp-for="message" class="form-control" id="comment" rows="5" placeholder="Enter your comment"></textarea>
+                  <textarea asp-for="@Model.comment.message" class="form-control" id="comment" rows="5" placeholder="Enter your comment"></textarea>
                 </div class>
                 <div class="text-center pt-2">
-                  <button asp-action="Comments" asp-controller="Home" onclick="alert('Your comment is added.!')" type="submit" class="btn btn-primary ">Submit</button>
+                  <button asp-action="Comments" asp-controller="Home" type="submit" class="btn btn-primary ">Share</button>
                 </div>
               </form>
             </div>
@@ -30,6 +36,25 @@
         </div>
       </div>
 
-        
-    <partial name="CommentsPartialView" action="CommentsPartial" model="CommentRepository.comments"/>
-    
+
+
+    <section id="section-form" class="light-text">
+    <div class="overcomment">
+                @foreach(var item in Model.comments)
+                {
+                <div class="user-comment-box">
+                    <div class="user-img-box align-item">
+                        <i class="fas fa-user"></i>
+                    </div>
+                <div class="user-comment" >
+                    <div class="comm-date"><h4>@item.name</h4> <h6>@item.creation_date</h6> </div>
+                    <p>@item.message</p>
+                </div>
+                </div>
+                }
+        </div>
+        <br />
+        @Html.PagedListPager((IPagedList)Model.comments,page=>Url.Action("Comments",new {page}))
+    </section>
+
+    </div>

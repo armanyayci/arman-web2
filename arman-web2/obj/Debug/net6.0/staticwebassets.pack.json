@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\arman\\Documents\\GitHub\\arman-web2\\arman-web2\\wwwroot\\images\\about.jpg",
+      "PackagePath": "staticwebassets\\images\\about.jpg"
+    },
+    {
       "Id": "C:\\Users\\arman\\Documents\\GitHub\\arman-web2\\arman-web2\\wwwroot\\images\\arman.jpg",
       "PackagePath": "staticwebassets\\images\\arman.jpg"
     },

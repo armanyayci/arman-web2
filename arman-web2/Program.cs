@@ -1,7 +1,22 @@
-﻿var builder = WebApplication.CreateBuilder(args);
+﻿using arman_web2.Models;
+using Microsoft.EntityFrameworkCore;
+
+var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+// Add services to the container.
+builder.Services.AddRazorPages();
+builder.Services.AddMvc();
+
+builder.Services.AddMvc(options => options.EnableEndpointRouting = false);
+
+builder.Services.AddTransient<ICommentRepository, EFCommentRepository>();
+
+
+
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+       options.UseSqlServer(builder.Configuration.GetSection(key: "ConnectionStrings:DefaultConnection").Value));
 
 var app = builder.Build();
 
