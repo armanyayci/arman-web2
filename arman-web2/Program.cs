@@ -8,10 +8,15 @@ builder.Services.AddControllersWithViews();
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddMvc();
+builder.Services.AddServerSideBlazor();
 
 builder.Services.AddMvc(options => options.EnableEndpointRouting = false);
 
-builder.Services.AddTransient<ICommentRepository, EFCommentRepository>();
+//builder.Services.AddTransient<IContactRepository, EFContactRepository>();
+builder.Services.AddScoped<ICommentRepository, EFCommentRepository>();
+builder.Services.AddScoped<IContactRepository, EFContactRepository>();
+
+
 
 
 
