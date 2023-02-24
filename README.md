@@ -1,2 +1,1 @@
-# arman-web2
-armanyayci.com personel website.
+# armanyayci.com personel website source code.
