@@ -38,6 +38,8 @@ public class HomeController : Controller
     {  
         if (ModelState.IsValid)
         {
+            DateTime date = DateTime.Now;
+            model.creation_Date = date;
             _contactRepository.CreateContact(model);
             return RedirectToAction("Thanks");
         }

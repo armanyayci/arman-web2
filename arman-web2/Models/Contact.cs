@@ -17,5 +17,7 @@ namespace arman_web2.Models
         [Required]
         [StringLength(500)]
         public string? message { get; set; }
+
+        public DateTime creation_Date { get; set; }
     }
 }
